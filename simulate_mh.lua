@@ -1,5 +1,13 @@
 local NDOORS = tonumber(arg[1]) or 3
 
+---
+-- Std C-printf with auto flush
+printf = function(fmt, ...)    
+    io.stdout:flush()   
+    io.write(string.format(fmt, ...)) 
+    io.stdout:flush()     
+end
+
 -- Function to simulate the game
 function simulateMontyHall()
     -- Place the car behind a random door
@@ -17,7 +25,7 @@ function simulateMontyHall()
     
     -- Ask the player if they want to change their pick
     local changePick = true -- Change the pick for demonstration purposes
-    string.format("change pick: %s\n",changePick)
+    printf("change pick: %s\n",changePick)
     
     -- If the player decides to change their pick
     if changePick then
@@ -26,7 +34,7 @@ function simulateMontyHall()
             newChoice = math.random(1, NDOORS)
         until newChoice ~= playerChoice and newChoice ~= openDoor
         playerChoice = newChoice
-        string.format("new choice : %d\n",newChoice)
+        printf("new choice : %d\n",newChoice)
     end
     
     -- Check if the player's final choice was the one with the car
@@ -49,5 +57,5 @@ end
 
 -- Calculate the win percentage
 local winPercentage = (wins / totalSimulations) * 100
-print("Win percentage without changing the pick: " .. 1.00/NDOORS*100 .. "%")
-print("Win percentage when changing the pick: " .. winPercentage .. "%")
+printf("Win percentage without changing the pick: %.2f%\n", 1.00/NDOORS*100)
+printf("Win percentage when changing the pick   : %.2f%\n", winPercentage)
