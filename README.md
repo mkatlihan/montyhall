@@ -35,5 +35,3 @@ This result means that if the player decides to switch their choice after Monty 
 This Bayesian analysis provides a clear understanding of the advantage of changing the initial choice in the Monty Hall problem. It illustrates how updating the probability based on new information (Monty Hall opening a door with a goat) can significantly affect the player's optimal strategy.
 
 By applying Bayesian probability, we can see that the initial probability distribution changes based on the new information, leading to a different optimal decision. This demonstrates the power of Bayesian reasoning in updating beliefs and making decisions in uncertain scenarios.
-
-In summary, the Monty Hall problem is a classic example where Bayesian probability can be used to analyze and understand the optimal strategy. It showcases the importance of updating probabilities based on new information and making decisions that maximize the likelihood of a favorable outcome.
