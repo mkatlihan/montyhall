@@ -50,8 +50,9 @@ To run the Monty Hall problem simulator, follow these steps:
 
 3. Run the script using the following command:
 
-
-			$ lua monty_hall.lua [NDOORS]
+```
+	$ lua monty_hall.lua [NDOORS]
+```
 
 4. Replace `[NDOORS]` with the desired number of doors for the simulation (default is 3 if not provided).
 	
@@ -71,10 +72,11 @@ You can customize the following parameters in the script:
 
 Here's an example of running the Monty Hall problem simulator with 4 doors:
 
-			$ lua monty_hall.lua 4
-			Win percentage without changing the pick: 25.00%
-			Win percentage when changing the pick   : 36.69%
-
+```
+	$ lua monty_hall.lua 4
+	Win percentage without changing the pick: 25.00%
+	Win percentage when changing the pick   : 36.69%
+```
 
 ## License
 
