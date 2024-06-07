@@ -78,6 +78,8 @@ Here's an example of running the Monty Hall problem simulator with 4 doors:
 	Win percentage when changing the pick   : 36.69%
 ```
 
+It's important to note that as the number of doors (`NDOORS`) increases, the information gained from opening a door diminishes. When `NDOORS` approaches infinity, the act of opening a door provides virtually no additional information, and the probability of winning by changing the initial choice converges to the same probability as sticking with the original choice. In other words, the advantage of switching doors becomes negligible as the number of doors grows very large.
+
 ## License
 
 This script is provided under the [MIT License](https://opensource.org/licenses/MIT). Feel free to use, modify, and distribute it as needed.
