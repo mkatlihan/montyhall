@@ -1,3 +1,4 @@
+#!/usr/bin/env lua
 local NDOORS = tonumber(arg[1]) or 3
 local is_debug = false
 
